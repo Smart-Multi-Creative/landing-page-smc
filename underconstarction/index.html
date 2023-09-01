@@ -26,8 +26,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
-
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -60,7 +58,7 @@
 
         <header class="s-intro__header">
             <div class="s-intro__logo">
-                <a class="logo" href="index-static.html">
+                <a class="logo" href="./">
                     <img src="images/SM - Logo.png" alt="Homepage">
                 </a>
             </div>
@@ -77,7 +75,18 @@
                     Stay Tuned for Our Revamped Website!<br>
                 </h1>
 
+
                 <div class="s-intro__content-bottom">
+
+                    <div class="s-intro__content-bottom-block">
+
+                        <a href="https://rb.gy/rz0ay" target="_blank" rel="noopener">
+                            <button type="button" class="btn--primary" style="border-radius: 10px;">
+                                Our Company Profile
+                            </button>
+                        </a>
+
+                    </div> <!-- end counter -->
 
                     <div class="s-intro__content-bottom-block">
 
@@ -391,7 +400,7 @@
 
                             <div class="column lg-6 tab-12">
                                 <h4>You Want to Build a Software?</h4>
-                                <a href="https://us21.list-manage.com/survey?u=bc24e8a8bf7ca60cf25d284ba&id=c7d7d411d0&attribution=false"
+                                <a href="https://us21.list-manage.com/survey?u=bc24e8a8bf7ca60cf25d284ba&id=2a158cc632&attribution=false"
                                     class="btn btn--stroke u-fullwidth">Right Here</a>
                             </div>
                         </div>
@@ -463,6 +472,10 @@
     </section> <!-- end s-details -->
 
 
+    <!-- live chat -->
+    <div id="live-chat"></div>
+
+
     <!-- Java Script
     ================================================== -->
     <script src="js/plugins.js"></script>
@@ -503,10 +516,17 @@
         ]
     </script>
     <script src="js/slider-carousel.js"></script>
-    <!-- MAILCHIMP -->
-    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script
-        type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/64f016ffa91e863a5c10c74d/1h94tjmpn';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
 </body>
 
 </html>
