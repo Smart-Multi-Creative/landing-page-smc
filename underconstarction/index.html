@@ -10,6 +10,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <meta property="og:title" content="Smart Multi Creative">
+    <meta property="og:url" content="https://smartkreatif.com">
+    <meta property="og:description" content="For Increase Your Business Value">
+    <meta property="og:image" content="https://smartkreatif.com/ms-icon-310x310.png">
+
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,14 +33,27 @@
 
     <!-- favicons
     ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
-<body id="top" class="ss-preload theme-static">
+<body id="top" class="ss-preload theme-static" style="background-color: white;">
 
 
     <!-- preloader
@@ -59,7 +77,7 @@
         <header class="s-intro__header">
             <div class="s-intro__logo">
                 <a class="logo" href="./">
-                    <img src="images/SM - Logo.png" alt="Homepage">
+                    <img src="images/logo-smc1-transparan-white.png" alt="Homepage" style="opacity: .8;">
                 </a>
             </div>
         </header> <!-- s-intro__header -->
@@ -175,7 +193,7 @@
                 </h1>
 
                 <nav class="tab-nav">
-                    <ul class="tab-nav__list">
+                    <ul class="tab-nav__list" style="background-color: white;">
                         <li class="active" data-id="tab-about">
                             <a href="#tab-about">
                                 <span>About</span>
@@ -361,25 +379,38 @@
 
                     <!-- 03 - tab our works -->
                     <div id="tab-works" class="tab-content__item" data-ride="carousel">
-                        <div class="row tab-content__item-header">
-                            <div class="column swiper-shrink">
+                        <div class="tab-content__item-header">
 
-                                <div class="swiper-container">
-                                    <div class="swiper-header">
-                                        <h1 class="swiper-title">Our Works</h1>
-                                        <h3 class="swiper-subtitle">A Selection of Signature Projects</h3>
+                            <div class="row">
+                                <div class="column swiper-shrink">
+
+                                    <div class="swiper-container">
+                                        <div class="swiper-header">
+                                            <h1 class="swiper-title">Our Works</h1>
+                                            <h3 class="swiper-subtitle">A Selection of Signature Projects</h3>
+                                        </div>
+                                        <div id="carousel" class="swiper">
+                                            <div id="swiper-content" class="swiper-wrapper"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
                                     </div>
-                                    <div id="carousel" class="swiper">
-                                        <div id="swiper-content" class="swiper-wrapper"></div>
-                                        <div class="swiper-pagination"></div>
+
+                                </div>
+                            </div>
+
+                            <!-- out clients -->
+                            <div class="row" style="margin-top: 50px;overflow: hidden;">
+                                <div class="column">
+                                    <h2 class="swiper-title text-center" style="color: black;">Our Clients</h2>
+                                    <div class="row">
+                                        <div id="our_clients" class="swiper">
+                                            <div id="our_clients_content" class="swiper-wrapper"></div>
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-
-
 
                     <!-- end 03 - tab our works -->
 
@@ -446,17 +477,12 @@
 
         </div> <!-- end tab content -->
 
-        <!-- sliding-carousel -->
-
         <!-- footer  -->
         <footer>
             <div class="ss-copyright">
                 <span>Copyright © 2020-2023 IB Solution International</span>
             </div>
         </footer>
-
-        </div>
-        </div>
 
         <div class="ss-go-top">
             <a class="smoothscroll" title="Back to Top" href="#top">
@@ -481,40 +507,6 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="vendor/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const slides = [
-            {
-                title: "ERP",
-                subtitle: "Corteva Agriscience",
-                image: "images/slider/corteva-portof.png"
-            },
-            {
-                title: "Custom Code",
-                subtitle: "Digital Desa",
-                image: "images/slider/digital-desa.png"
-            },
-            {
-                title: "360’ Virtual Show Website",
-                subtitle: "Podomoro Park Bandung",
-                image: "images/slider/podomoro-park.png"
-            },
-            {
-                title: "Company Profile",
-                subtitle: "Warung Pintar",
-                image: "images/slider/warpin-portof.png"
-            },
-            {
-                title: "Logo",
-                subtitle: "Royal Gading Therapy",
-                image: "images/slider/portfolio-logo.png"
-            },
-            {
-                title: "CMS Company Profile",
-                subtitle: "Angel Bull Indonesia",
-                image: "images/slider/Angel-bull.png"
-            },
-        ]
-    </script>
     <script src="js/slider-carousel.js"></script>
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
@@ -526,6 +518,113 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+
+        // OUR WORKS
+        ourWorks([
+            {
+                title: "ERP",
+                subtitle: "Corteva Agriscience",
+                image: "images/slider/corteva-portof.webp"
+            },
+            {
+                title: "Custom Code",
+                subtitle: "Digital Desa",
+                image: "images/slider/digital-desa.webp"
+            },
+            {
+                title: "360’ Virtual Show Website",
+                subtitle: "Podomoro Park Bandung",
+                image: "images/slider/podomoro-park.webp"
+            },
+            {
+                title: "Company Profile",
+                subtitle: "Warung Pintar",
+                image: "images/slider/warpin-portof.webp"
+            },
+            {
+                title: "Logo",
+                subtitle: "Royal Gading Therapy",
+                image: "images/slider/portfolio-logo.webp"
+            },
+            {
+                title: "CMS Company Profile",
+                subtitle: "Angel Bull Indonesia",
+                image: "images/slider/Angel-bull.webp"
+            },
+        ])
+
+        // OUR CLIENTS
+        ourClients([
+            {
+                title: "Client 1",
+                image: "images/clients/AngelBull-logo.png"
+            },
+            {
+                title: "Client 2",
+                image: "images/clients/download.png"
+            },
+            {
+                title: "Client 3",
+                image: "images/clients/image.png"
+            },
+            {
+                title: "Client 4",
+                image: "images/clients/image1.png"
+            },
+            {
+                title: "Client 5",
+                image: "images/clients/image2.png"
+            },
+            {
+                title: "Client 6",
+                image: "images/clients/image3.png"
+            },
+            {
+                title: "Client 7",
+                image: "images/clients/image4.png"
+            },
+            {
+                title: "Client 8",
+                image: "images/clients/logo gka.jpg"
+            },
+            {
+                title: "Client 9",
+                image: "images/clients/logo kartika.jpg"
+            },
+            {
+                title: "Client 10",
+                image: "images/clients/LOGO ROYAL GADING.pdf.png"
+            },
+            {
+                title: "Client 11",
+                image: "images/clients/logo Sahabat elektronik.jpg"
+            },
+            {
+                title: "Client 12",
+                image: "images/clients/Logo Warung Pintar.png"
+            },
+            {
+                title: "Client 13",
+                image: "images/clients/logo-digitaldesa.png"
+            },
+            {
+                title: "Client 14",
+                image: "images/clients/LSA CURVED CHROME LOGO.webp"
+            },
+            {
+                title: "Client 15",
+                image: "images/clients/MBM NEW LOGO - BLACK.png"
+            },
+            {
+                title: "Client 16",
+                image: "images/clients/Shooneo records logo.webp"
+            },
+            {
+                title: "Client 17",
+                image: "images/clients/Untitled design-min.png"
+            },
+        ])
+
     </script>
 </body>
 
